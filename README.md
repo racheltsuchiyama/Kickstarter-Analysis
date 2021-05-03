@@ -8,8 +8,9 @@ This table was summarized into a marked line graph.
 ![Theater_Outcomes_vs_Launch](https://user-images.githubusercontent.com/83552696/116838095-f2594680-ab81-11eb-8406-43929e147744.png)
 
 ### Outcomes Based on Goals
-To determine how the funding goal effected the outcome of the plays, I utilized the COUNTIFS excel function. First, I specified monetary ranges of about $5000. Then, I counted the number of successful, failed, or canceled plays within each range using the following code:
-  =COUNTIFS(Kickstarter!$F:$F, "successful", Kickstarter!$D:$D, "<1000",  Kickstarter!$R:$R, "plays")
+To determine how the funding goal effected the outcome of the plays, I utilized the COUNTIFS excel function. First, I specified monetary ranges of about $5000. Then, I counted the number of successful, failed, or canceled plays within each range using the following code: //
+
+  =COUNTIFS(Kickstarter!$F:$F, "successful", Kickstarter!$D:$D, "<1000",  Kickstarter!$R:$R, "plays") .
 I converted the number of each outcome into percentages by dividing them by the total projects (sum of outcomes for each range) and multiplying by 100%. Then, I put this analysis into a line graph with the x-axis as the goal ranges and the y-axis as the outcome percentages. 
 ![Outcomes_vs_Goals](https://user-images.githubusercontent.com/83552696/116838102-f9805480-ab81-11eb-90a8-f14f31ffea0e.png)
 
